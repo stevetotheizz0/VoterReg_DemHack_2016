@@ -9,12 +9,10 @@
     <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 
-    <!-- Chart JS -->
-    <script type="script/javascript" src="https://cdnjs.com/libraries/chart.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,90 +22,31 @@
     <![endif]-->
   </head>
   <body>
+    <div class="container-fluid">
+      <div id="map" class="col-md-8">
+      </div>
 
-    <div class="container-fluid" id="header">
-      <div class="row">
-
-        <div class="col-md-3 col-sm-4 col-xs-4">
-          <a href="#" id="gender">
-          <img src="img/gender.png" class="filter center-block" onclick="runGenderFilter(this)">
-        </a>
+      <div id="graphs" class="col-md-4">
+        <div class="graph">
+          <canvas id="myChart1"></canvas>
         </div>
-        <div class="col-md-3 col-sm-4 col-xs-4">
-          <a href="#" id="age">
-          <img src="img/age.png" class="filter center-block" onclick="runAgeFilter(this)">
-        </a>
+        <div class="graph">
+          <canvas id="myChart2"></canvas>
         </div>
-        <div class="col-md-3 col-sm-4 col-xs-4">
-        <a href="#" id="party">
-          <img src="img/party.png" class="filter center-block" onclick="runPartyFilter(this)">
-        </a>
+        <div class="graph">
+          <canvas id="myChart3"></canvas>
         </div>
-
-        <div class="form-group col-md-3 col-sm-12 col-xs-12">
-          <form class="navbar-form center-block" role="search">
-          <input type="text" class="form-control" placeholder="Enter Zipcode">
-        </form>
+        <div class="graph">
+          <canvas id="myChart4"></canvas>
         </div>
-      </form>
-
       </div>
     </div>
 
-    <div class="container-fluid">
-      <div class="row">
 
-        <div id="map" class="col-md-8">
-        </div>
-
-        <div id="graphs" class="col-md-4">
-          <div class="graph">
-            <canvas id="myChart1"></canvas>
-          </div>
-          <div class="graph">
-            <canvas id="myChart2"></canvas>
-          </div>
-          <div class="graph">
-            <canvas id="myChart3"></canvas>
-          </div>
-          <div class="graph">
-            <canvas id="myChart4"></canvas>
-          </div>
-        </div>
-
-</div>
-
-<div id="footer" class="container-fluid">
-  <div class="col-xs-3">
-  <a href="#"><img src="img/facebook.jpeg" class="socialMedia center-block"
-    onmouseover="this.src='img/facebook2.png'"
-  onmouseout="this.src='img/facebook.jpeg'" ></a>
-</div>
-<div class="col-xs-3">
-  <a href="#">
-    <img src="img/twitter.jpeg" class="socialMedia center-block"
-    onmouseover="this.src='img/twitter2.png'"
-    onmouseout="this.src='img/twitter.jpeg'"  alt=""/>
-  </a>
-</div>
-<div class="col-xs-3">
-  <a href="#"><img src="img/google.jpeg" class="socialMedia center-block"
-    onmouseover="this.src='img/google2.png'"
-  onmouseout="this.src='img/google.jpeg'" ></a>
-</div>
-<div class="col-xs-3">
-  <a href="#"><img src="img/tumblr.jpeg" class="socialMedia center-block"
-    onmouseover="this.src='img/tumblr2.png'"
-  onmouseout="this.src='img/tumblr.jpeg'" ></a>
-</div>
-
-</div>
-
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+    <script src="https://cdnjs.com/libraries/chart.js" type="script/javascript"></script>
     <script src="js/main.js"></script>
 
   </body>

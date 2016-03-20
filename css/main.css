@@ -1,33 +1,14 @@
-#header {
-  height: 10vh;
+#graphs {
+  height: 100vh;
 }
 
-#graphs {
-  height: 80vh;
-}
-.graph {
-  height: 20vh;
-  border-bottom: black dotted;
-}
 #map {
-  height: 80vh;
-  background-color: #009;
+  height: 100vh;
 }
+
 .navbar {
   height: 10vh;
 }
-.filter {
-  height: 10vh;
-}
-
-#footer {
-  height: 10vh;
-}
-
-.socialMedia {
-  height: 10vh;
-}
-
 
 @media (max-width: 990px) {
   #header {
